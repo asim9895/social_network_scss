@@ -1,0 +1,72 @@
+@import 'config';
+@import 'utilities';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway';
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  line-height: 1.6rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: 2px solid $primary-color;
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+
+    color: #fff;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.landing {
+  position: relative;
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  &-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+  }
+}
